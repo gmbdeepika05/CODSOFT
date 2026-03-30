@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: radial-gradient(circle at top, #0f001f, #000);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* CALCULATOR BOX */
+.calculator {
+    background: rgba(255,255,255,0.05);
+    padding: 25px;
+    border-radius: 25px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 40px #00f7ff;
+    width: 320px;
+}
+
+/* TITLE */
+.title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #00f7ff, #ff00ea);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* DISPLAY (FIXED VISIBILITY) */
+#display {
+    width: 100%;
+    height: 60px;
+    font-size: 26px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 12px;
+    text-align: right;
+    padding: 10px;
+    background: #020617; /* dark but visible */
+    color: #00f7ff; /* neon text */
+    box-shadow: inset 0 0 10px #00f7ff;
+}
+
+/* BUTTON GRID */
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+/* BUTTON STYLE */
+button {
+    padding: 15px;
+    font-size: 18px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #ff00ea, #00f7ff);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 0 10px #ff00ea;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00f7ff;
+}
+
+/* ZERO BUTTON */
+.zero {
+    grid-column: span 2;
+}
+
+/* HISTORY */
+.history {
+    margin-top: 20px;
+    background: rgba(255,255,255,0.05);
+    padding: 10px;
+    border-radius: 10px;
+    max-height: 150px;
+    overflow-y: auto;
+}
+
+.history h3 {
+    color: #ff00ea;
+}
+
+.history ul {
+    list-style: none;
+    padding: 0;
+    color: #e2e8f0; /* FIXED visibility */
+    font-size: 14px;
+}
+
+.clear-history {
+    margin-top: 10px;
+    width: 100%;
+    background: linear-gradient(90deg, red, orange);
+    color: white;
+}
