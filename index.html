@@ -1,34 +1,68 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>My CodSoft Projects</title>
+    <title>CodSoft Projects</title>
+
     <style>
         body {
-            font-family: Arial;
-            background: black;
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            background: linear-gradient(to right, #000000, #0f2027);
             color: white;
             text-align: center;
             padding: 50px;
         }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            background: linear-gradient(90deg, #00f7ff, #ff00ea);
+            -webkit-background-clip: text;
+            color: transparent;
+        }
+
+        p {
+            color: #cbd5f5;
+            margin-bottom: 40px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
         a {
-            display: block;
-            margin: 20px;
-            padding: 15px;
-            background: cyan;
-            color: black;
+            width: 220px;
+            padding: 20px;
             text-decoration: none;
-            border-radius: 10px;
+            color: white;
+            border-radius: 15px;
+            background: linear-gradient(135deg, #ff00ea, #00f7ff);
+            font-size: 18px;
             font-weight: bold;
+            transition: 0.3s;
+            box-shadow: 0 0 15px #00f7ff;
+        }
+
+        a:hover {
+            transform: scale(1.1);
+            box-shadow: 0 0 25px #ff00ea;
         }
     </style>
 </head>
+
 <body>
 
 <h1>🚀 My CodSoft Projects</h1>
+<p>Internship Projects - CodSoft</p>
 
-<a href="portfolio/index.html">Portfolio</a>
-<a href="Landing-page/index.html">Landing Page</a>
-<a href="Calculator/index.html">Calculator</a>
+<div class="container">
+    <a href="portfolio/index.html" target="_blank">🚀 My Portfolio</a>
+    <a href="landing-page/index.html" target="_blank">🌐 Creative Landing Page</a>
+    <a href="calculator/index.html" target="_blank">🧮 Smart Calculator</a>
+</div>
 
 </body>
 </html>
